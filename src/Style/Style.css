@@ -1,0 +1,210 @@
+body {
+  background-color: #bfc3c6;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  color: #293b49;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+a:hover {
+  color: #9b9b9b;
+}
+
+.navigationBar {
+  font-family: sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #293b49;
+  color: white;
+  padding: 2rem;
+  -webkit-box-shadow: 0px 3px 2px black;
+          box-shadow: 0px 3px 2px black;
+  margin-bottom: 2rem;
+}
+
+.CharComp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.CharComp div {
+  margin: 2px;
+}
+
+.CrewCompContiner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.imgcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.EpiComp {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  border-bottom: 1px white solid;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 0.6rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.CrewComp {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.CrewCompIB {
+  width: 300px;
+}
+
+.CrewCompContiner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.crewName {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.crewRole {
+  font-weight: 100;
+}
+
+.buttonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.quoteButton {
+  background-color: #293b49;
+  color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem;
+  -webkit-box-shadow: 0px 3px 2px black;
+          box-shadow: 0px 3px 2px black;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition-duration: 600ms;
+          transition-duration: 600ms;
+}
+
+.quoteButton:hover {
+  background-color: #19252e;
+}
+
+.theQuote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.quoteContainer {
+  padding-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+
+.quoteContent {
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.quoteCharacter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 1rem;
+  font-style: italic;
+  font-weight: 100;
+}
+
+.quoteCharacter div {
+  padding-right: 3px;
+}
+/*# sourceMappingURL=Style.css.map */

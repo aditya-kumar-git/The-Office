@@ -1,0 +1,161 @@
+// #Variables
+
+$base: #bfc3c6;
+$accent: #293b49;
+$shadow: 0px 3px 2px black;
+
+// #Variables
+
+body {
+  background-color: $base;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  //   font-family: sans-serif;
+  color: $accent;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  transition-duration: 500ms;
+  &:hover {
+    color: rgb(155, 155, 155);
+  }
+}
+
+.navigationBar {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: $accent;
+  color: white;
+  padding: 2rem;
+  box-shadow: $shadow;
+  margin-bottom: 2rem;
+}
+
+//@CHARACTERS
+
+.CharComp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  div {
+    margin: 2px;
+  }
+}
+
+.CrewCompContiner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+//@CHARACTERS
+
+.imgcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+//!EPISODES
+
+.EpiComp {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  border-bottom: 1px white solid;
+}
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 0.6rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+//!EPISODES
+
+//$CREW
+
+.CrewComp {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.CrewCompIB {
+  width: 300px;
+}
+.CrewCompContiner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.crewName {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.crewRole {
+  font-weight: 100;
+}
+//$CREW
+
+//#QUOTE
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quoteButton {
+  background-color: $accent;
+  color: white;
+  width: fit-content;
+  padding: 1rem;
+  box-shadow: $shadow;
+  border-radius: 5px;
+  cursor: pointer;
+  transition-duration: 600ms;
+  &:hover {
+    background-color: #19252e;
+  }
+}
+
+.theQuote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.quoteContainer {
+  padding-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+.quoteContent {
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.quoteCharacter {
+  display: flex;
+  padding-top: 1rem;
+  font-style: italic;
+  font-weight: 100;
+  div {
+    padding-right: 3px;
+  }
+}
+//#QUOTE

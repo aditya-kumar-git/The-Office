@@ -1,6 +1,7 @@
 import React from "react"
 import { connect } from "react-redux"
 import { BrowserRouter, Link, Route } from "react-router-dom"
+import "./Style/Style.css"
 
 //! PAGES
 import Characters from "./Screens/Characters"
@@ -8,9 +9,19 @@ import Episodes from "./Screens/Episodes"
 import Crew from "./Screens/Crew"
 import Quotes from "./Screens/Quotes"
 
+//! ACTIONS
+
+import {
+  charactersApiCall,
+  episodesApiCall,
+  crewApiCall,
+} from "./REDUX/Actions"
+
 class App extends React.Component {
   componentDidMount() {
-    console.log(this.props.dummyReducer)
+    this.props.charactersApiCall()
+    this.props.episodesApiCall()
+    this.props.crewApiCall()
   }
 
   render() {
@@ -19,7 +30,7 @@ class App extends React.Component {
         <BrowserRouter>
           {/* //!NAVIGATION BAR */}
 
-          <div>
+          <div className="navigationBar">
             <Link to="/">
               <div>Characters</div>
             </Link>
@@ -57,4 +68,8 @@ var setPropToState = (state) => {
   return state
 }
 
-export default connect(setPropToState)(App)
+export default connect(setPropToState, {
+  charactersApiCall,
+  episodesApiCall,
+  crewApiCall,
+})(App)

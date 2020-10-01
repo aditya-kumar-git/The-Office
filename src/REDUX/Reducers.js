@@ -10,6 +10,51 @@ var dummyReducer = (iniState = 0, action) => {
   }
 }
 
-var allReducers = combineReducers({ dummyReducer })
+var charactersRed = (iniState = [], action) => {
+  switch (action.type) {
+    case "CHAR":
+      return action.payload
+
+    default:
+      return iniState
+  }
+}
+
+var episodesRed = (iniState = [], action) => {
+  switch (action.type) {
+    case "EPI":
+      return action.payload
+
+    default:
+      return iniState
+  }
+}
+
+var crewRed = (iniState = [], action) => {
+  switch (action.type) {
+    case "CREW":
+      return action.payload
+
+    default:
+      return iniState
+  }
+}
+var quoteRed = (iniState = [], action) => {
+  switch (action.type) {
+    case "QUOTE":
+      return action.payload
+
+    default:
+      return iniState
+  }
+}
+
+var allReducers = combineReducers({
+  dummyReducer,
+  charactersRed,
+  episodesRed,
+  crewRed,
+  quoteRed,
+})
 
 export default allReducers
