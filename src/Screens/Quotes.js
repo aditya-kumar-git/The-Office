@@ -2,9 +2,13 @@ import gsap from "gsap"
 import React from "react"
 import { connect } from "react-redux"
 import officeQuotes from "../Images/officeQuotes.png"
-import { quoteApiCall } from "../REDUX/Actions"
+import { quoteApiCall, clearQuote } from "../REDUX/Actions"
 
 class Quotes extends React.Component {
+  constructor(props) {
+    super(props)
+    this.props.clearQuote()
+  }
   componentDidMount() {
     var tl = gsap.timeline()
     tl.from(".imgcontainer", { duration: 1, opacity: 0 })
@@ -65,4 +69,4 @@ var mapStateToProps = (state) => {
   return state
 }
 
-export default connect(mapStateToProps, { quoteApiCall })(Quotes)
+export default connect(mapStateToProps, { quoteApiCall, clearQuote })(Quotes)

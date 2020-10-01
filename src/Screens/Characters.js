@@ -9,6 +9,7 @@ class Characters extends React.Component {
   componentDidMount() {
     var tl = gsap.timeline()
     tl.from(".imgcontainer", { opacity: 0, duration: 1 })
+    tl.from(".officeHeading", { opacity: 0, duration: 0.5 })
     tl.from(".CharComp", {
       y: "100%",
       opacity: "0",
@@ -20,7 +21,7 @@ class Characters extends React.Component {
   componentDidUpdate(prevProps, prevState) {
     if (prevProps.charactersRed.length === 0) {
       var tl = gsap.timeline()
-
+      tl.from(".officeHeading", { opacity: 0, duration: 0.5 })
       tl.from(".CharComp", {
         y: "100%",
         opacity: "0",
@@ -36,6 +37,8 @@ class Characters extends React.Component {
         <div className="imgcontainer">
           <img src={officeCharacters} alt="" />
         </div>
+
+        <div className="officeHeading">Characters</div>
 
         <div className="CrewCompContiner">
           {this.props.charactersRed.map((element, index) => {

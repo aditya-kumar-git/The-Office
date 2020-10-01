@@ -53,3 +53,9 @@ export var quoteApiCall = () => {
     }
   }
 }
+
+export var clearQuote = () => {
+  return (dispatch) => {
+    dispatch({ type: "CLEAR", payload: [] })
+  }
+}

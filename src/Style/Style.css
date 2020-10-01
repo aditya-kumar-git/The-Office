@@ -18,6 +18,15 @@ a:hover {
   color: #9b9b9b;
 }
 
+.officeHeading {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  cursor: pointer;
+  padding-bottom: 2rem;
+}
+
 .navigationBar {
   font-family: sans-serif;
   display: -webkit-box;
@@ -206,5 +215,28 @@ a:hover {
 
 .quoteCharacter div {
   padding-right: 3px;
+}
+
+img {
+  max-width: 100vw;
+}
+
+@media (max-width: 800px) {
+  .CrewCompIB {
+    width: 50vw;
+    padding-left: 50px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .quoteContainer {
+    padding-top: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .EpiComp {
+    padding-bottom: 2rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 /*# sourceMappingURL=Style.css.map */

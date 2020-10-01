@@ -8,6 +8,7 @@ class Episodes extends React.Component {
   componentDidMount() {
     var tl = gsap.timeline()
     tl.from(".imgcontainer", { duration: 1, opacity: 0 })
+    tl.from(".officeHeading", { opacity: 0, duration: 0.5 })
     tl.from(".EpiComp", {
       y: "50%",
       opacity: "0",
@@ -20,6 +21,7 @@ class Episodes extends React.Component {
     if (prevProps.episodesRed.length === 0) {
       console.log("ZERO KHA SE HAI")
       var tl = gsap.timeline()
+      tl.from(".officeHeading", { opacity: 0, duration: 0.5 })
       tl.from(".EpiComp", {
         y: "50%",
         opacity: "0",
@@ -35,6 +37,7 @@ class Episodes extends React.Component {
         <div className="imgcontainer">
           <img src={officeEpisodes} alt="" />
         </div>
+        <div className="officeHeading">Episodes</div>
         <div>
           {this.props.episodesRed.map((element) => {
             return <EpiComp key={element._id} eleData={element} />

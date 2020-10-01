@@ -44,6 +44,9 @@ var quoteRed = (iniState = [], action) => {
     case "QUOTE":
       return action.payload
 
+    case "CLEAR":
+      return action.payload
+
     default:
       return iniState
   }
